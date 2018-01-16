@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        project.ext.set("archivesBaseName", defaultConfig.applicationId + "_" + defaultConfig.versionName)
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    final SUPPORT_VERSION = '26.0.2'
+
+    implementation 'com.android.support:support-v4:26.0.2'
+    compile 'com.afollestad:sectioned-recyclerview:0.5.0'
+    implementation "com.android.support:support-v4:$SUPPORT_VERSION"
+    compile "com.android.support:appcompat-v7:$SUPPORT_VERSION"
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1@aar'
+    compile "com.android.support:recyclerview-v7:$SUPPORT_VERSION"
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'jp.wasabeef:picasso-transformations:2.1.2'
+    compile "com.android.support:support-emoji:$SUPPORT_VERSION"
+    compile 'com.vdurmont:emoji-java:3.3.0'
+
+}

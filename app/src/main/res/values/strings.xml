@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+
+    //Product page
+    <string name="select_color">Select a color</string>
+    <string name="product_description">Description</string>
+    <string name="add_to_bag">Add to Bag</string>
+    <string name="price">$%.2f</string>
+    <string name="default_error_text">Something went wrong.</string>
+    <string name="default_error_text_with_message">Something went wrong. %s</string>
+    <string name="default_error_select_color">Select Color</string>
+
+    //Sign in
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+
+</resources>

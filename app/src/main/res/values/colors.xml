@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#BBB</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="main_background">#FFF</color>
+
+    //Product page
+    <color name="product_page_background">#FFF</color>
+    <color name="name_text">#000</color>
+    <color name="price_text">#000</color>
+    <color name="select_color_text">#000</color>
+    <color name="product_description_title_text">#000</color>
+    <color name="product_description_text">#000</color>
+    <color name="image_placeholder_color">#AAA</color>
+    <color name="page_indicator_fill">#333</color>
+    <color name="page_indicator_page">#AAA</color>
+    <color name="page_indicator_stroke">#0000</color>
+    <color name="add_to_bag_text">#FFF</color>
+    <color name="pink_gradient_start">#005FE8</color>
+    <color name="pink_gradient_end">#009FE8</color>
+
+    //Sign in
+    <color name="sign_in_background">#FFF</color>
+    <color name="email_text_color">#000</color>
+    <color name="password_text_color">#000</color>
+    <color name="sign_in_button_text_color">#FFF</color>
+
+</resources>
